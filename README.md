@@ -1,1 +1,2 @@
-# pracownia
+# frontendproject
+Pracownia Eksperymentu
