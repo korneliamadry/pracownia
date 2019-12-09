@@ -1,6 +1,12 @@
-*{
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+* {
   box-sizing: border-box;
 }
+
 html{
   box-sizing: border-box;
 }
@@ -12,6 +18,7 @@ body {
 img {
   max-width: 100%;
 }
+
 
 .mainpage{
   width: 95%;
@@ -26,7 +33,7 @@ font-weight: normal;
 h1 {
   font-family: 'Comfortaa', cursive;
   color: #000;
-  font-size: 1.7em;
+  font-size: 5vh;
   line-height: 125%;
 }
 
@@ -34,17 +41,16 @@ h2 {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.15em;
+  font-size: 3.4vh;
 
 }
 
 
-
 .header {
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
-margin-top: 40px;
+margin-top: 35px;
 flex-wrap: wrap;
 }
 
@@ -69,6 +75,10 @@ flex-wrap: wrap;
   top: 0;
 }
 
+.calendar {
+  max-width: 20px;
+}
+
 #about .imglogo {
   width: 40%;
 }
@@ -86,7 +96,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-right: 60px;
+  padding-right: 10%;
 }
 
 li {
@@ -105,40 +115,28 @@ border-bottom: solid 2px #f15a29;
   position: absolute;
   right: 15px;
   top: 15px;
-  border-bottom: 1px solid #4a4a4a;
-
-  /*background-image: linear-gradient(transparent 0%, transparent 40%,
-
-    #00c1b3 100%, transparent 90%, transparent);*/
     display: inline;
-    font-size: 0.85em;
+    font-size: 2.2vh;
 }
+
 
 
 .welcometext {
-max-width: 720px;
-max-height: 165px;
+max-width: 70%;
+max-height: 60%;
 color: rgba(0, 0, 0, 0.7);
 margin-left: 10%;
-margin-top: 1%;
-bottom: 10%;
 }
-
 
 .imgkids {
   z-index: -100;
-  position: absolute;
-  bottom: -50px;
-  right: 0;
   width: 90%;
-
+  position: absolute;
+  right: 0;
+  bottom: -10px;
 }
 
-.underlinepurple {
-  text-decoration: underline;
-text-size: 0.7em;
-  text-decoration-color: #4800ba;
-}
+
 
 .underlineorange {
   text-decoration: underline;
@@ -149,6 +147,7 @@ text-size: 0.7em;
   text-decoration-color: #f15a29;
 }
 
+
 .offer {
   padding-top: 35px;
   width: 70%;
@@ -156,7 +155,8 @@ margin-bottom: 200px;
 z-index: 10;
     -webkit-animation: flip-in-x 1.2s 0.2s;
             animation: flip-in-x 1.2s 0.2s;
-
+display: flex;
+flex-wrap: nowrap;
 }
 
 @keyframes flip-in-x
@@ -859,12 +859,12 @@ text-align: center;
 @media only screen and (max-width: 1500px) {
 
 .header {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 
 }
 .imglogo {
   padding-bottom: 10%;
-  padding-left: 0;
+  padding-left: 5px;
 }
 
 
@@ -879,5 +879,16 @@ body {
   visibility: hidden;
 }
 
+.body {
+  font-size: 80%;}
+
+.menu a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offer {
+  margin-bottom: 20px;
+}
 
 }
