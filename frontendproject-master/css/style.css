@@ -809,6 +809,140 @@ height: 300px;
   padding: 20px;
 }
 
+/* ABOUT US */
+
+.about1 {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  display:grid;
+  grid-template-columns: 40% 60%;
+
+}
+
+.about1 img {
+  width: 80%;
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+}
+
+.rect {
+  background: rgba(72, 0, 186, 0.25);
+  box-shadow: 0px 21px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+height: 320px;
+grid-column: 1;
+grid-row: 1;
+align-self: center;
+justify-self: center;
+}
+
+.bgrect {
+  align-self: center;
+  height: 320px;
+  box-shadow: 0px 21px 30px rgba(0, 0, 0, 0.25);
+}
+
+.bgrect h3 {
+  border-bottom: 3px solid #4800BA;
+  display: inline;
+}
+
+.about2 {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  display:grid;
+  grid-template-columns: 60% 40%;
+
+}
+
+.about2 img {
+  width: 80%;
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: center;
+}
+
+.rect2 {
+  background: rgba(72, 0, 186, 0.25);
+  box-shadow: 0px 21px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+height: 320px;
+grid-column: 2;
+grid-row: 1;
+align-self: center;
+justify-self: center;
+}
+
+.bgrect2 {
+  align-self: center;
+  height: 320px;
+  box-shadow: 0px 21px 30px rgba(0, 0, 0, 0.25);
+}
+
+.bgrect2 h3 {
+  border-bottom: 3px solid #4800BA;
+  display: inline;
+}
+
+
+.about3 {
+  margin-bottom: 120px;
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  display:grid;
+  grid-template-columns: 40% 60%;
+
+}
+
+.about3 img {
+  width: 80%;
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: center;
+}
+
+.rect3 {
+  background: rgba(72, 0, 186, 0.25);
+  box-shadow: 0px 21px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+height: 320px;
+grid-column: 1;
+grid-row: 1;
+align-self: center;
+justify-self: center;
+}
+
+.bgrect3 {
+  align-self: center;
+  height: 320px;
+  box-shadow: 0px 21px 30px rgba(0, 0, 0, 0.25);
+}
+
+.bgrect3 h3 {
+  border-bottom: 3px solid #4800BA;
+  display: inline;
+}
+
+.about4 {
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px ;
+  margin-left: 150px;
+  margin-right: 140px;
+}
+
+iframe {
+  width: 100%;
+}
+
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
