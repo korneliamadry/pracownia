@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 } */
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-
 /* eventually - blue background skew
 body:before {
   content: '';
@@ -28,6 +29,7 @@ body:before {
 
 html{
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -43,11 +45,27 @@ img {
   width: 95%;
 }
 
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+
+}
+
+
+
 p {
 font-family: 'Nunito Sans', sans-serif;
 font-style: normal;
 font-weight: normal;
 }
+
+
+
+
+
 
 h1 {
   font-family: 'Comfortaa', cursive;
@@ -57,10 +75,10 @@ h1 {
 }
 
 h2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 3.3vh;
+  font-size: 3.0vh;
 }
 
 
@@ -72,10 +90,16 @@ margin-top: 35px;
 flex-wrap: wrap;
 }
 
+
+
+
+
+
+
 .main {
   display: flex;
   flex-wrap: wrap;
-  width: 85%;
+  width: 94%;
 }
 
 .imglogo {
@@ -144,7 +168,7 @@ border-bottom: solid 2px #f15a29;
 
 
 .welcometext {
-max-width: 66%;
+max-width: 65%;
 max-height: 60%;
 color: rgba(0, 0, 0, 0.7);
 margin-left: 10%;
@@ -156,7 +180,7 @@ margin-left: 10%;
   width: 100%;
   position: absolute;
   right: 0;
-  bottom: -10px;
+  bottom: 10;
 }
 
 
@@ -819,15 +843,18 @@ width: 110px;
 
 
 .footer {
-  position: fixed;
-  left: 0;
+  position: absolute;
+  right: 0;
+  left: 0
+  bottom: 0;
+  padding: 2px;
   width: 100%;
   color: #ffffff;
   text-align: center;
   background-color: #4800ba;
   height: 90px;
-  bottom: 0;
     }
+
 
 .footer img {
   width: 18px;
@@ -836,7 +863,7 @@ width: 110px;
 
     .tetrominos {
       position: absolute;
-      bottom: -18%;
+      bottom: 0;
       right: 18%;
       z-index: 30;
       -webkit-transform: translate(-112px, -96px);
