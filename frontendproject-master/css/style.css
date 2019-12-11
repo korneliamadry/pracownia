@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 } */
-* {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-
 /* eventually - blue background skew
 body:before {
   content: '';
@@ -56,6 +57,11 @@ font-style: normal;
 font-weight: normal;
 }
 
+
+
+
+
+
 h1 {
   font-family: 'Comfortaa', cursive;
   color: #000;
@@ -79,6 +85,12 @@ margin-top: 35px;
 flex-wrap: wrap;
 }
 
+
+
+
+
+
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -87,27 +99,26 @@ flex-wrap: wrap;
 
 .imglogo {
   max-width: 500px;
-  width: 50%;
-  /* margin-left: 10px; */
-  padding-left: 20px;
-  padding-top: 20px;
-  top: 0;
+  width: 95%;
+  margin-left: 10px;
 }
 
-/* changed class name in about page from imglogo2 to imglogo
 .imglogo2 {
-  max-width: 500px;
-  width: 50%;
+  max-width: 200px;
+  width: 100%;
   padding-left: 20px;
   padding-top: 20px;
+  position: fixed;
   top: 0;
-} */
+}
 
 .calendar {
   max-width: 20px;
 }
 
-
+#about .imglogo {
+  width: 40%;
+}
 
 
 
@@ -157,7 +168,6 @@ max-width: 65%;
 max-height: 60%;
 color: rgba(0, 0, 0, 0.7);
 margin-left: 10%;
-clear: both;
 }
 .welcometext h1{
   font-size: 4vh;
@@ -848,6 +858,7 @@ width: 110px;
 
     }
 
+
 .footer img {
   width: 18px;
   opacity: 0.6;
@@ -855,7 +866,7 @@ width: 110px;
 
     .tetrominos {
       position: absolute;
-      bottom: -18%;
+      bottom: 0;
       right: 18%;
       z-index: 30;
       -webkit-transform: translate(-112px, -96px);
@@ -1033,9 +1044,9 @@ width: 110px;
 
     .wrapper {
     	width: 100px;
-    	font-family: 'Comfortaa', cursive;
+    	font-family: 'Passion One', sans-serif;
       letter-spacing: -5px;
-    	/* margin: 0 auto; */
+    	margin: 0 auto;
     	-webkit-backface-visibility: hidden;
     	backface-visibility: hidden;
     }
@@ -1043,9 +1054,9 @@ width: 110px;
     .wrapper .heading {
     	text-transform: uppercase;
     	margin: 0;
-    	font-size: 45px;
+    	font-size: 3vw;
     	font-weight: 900;
-    	text-shadow: 2px 5px 7px #e6e2df;
+    	text-shadow: 1px 4px 6px #e6e2df;
     	white-space: nowrap;
 
     }
@@ -1116,7 +1127,7 @@ width: 110px;
     	-webkit-text-fill-color: transparent;
     }
 
-    .wrapper span.char6 {
+    wrapper span.char6 {
     	color: #a8009a;
     }
     .wrapper span.char6:hover {
@@ -1128,47 +1139,47 @@ width: 110px;
     	-webkit-text-fill-color: transparent;
     }
 
-    .wrapper span.char7 {
+    wrapper span.char7 {
     	color: #9a00a8;
     }
     .wrapper span.char7:hover {
     	color: #9a00a8;
     }
     .wrapper span.char7:hover::after {
-    	background: -webkit-linear-gradient(left, #870094 0%, #870094 75%);
+    	background: -webkit-linear-gradient(left, #b63d9f 0%, #b63d9f 75%);
     	-webkit-background-clip: text;
     	-webkit-text-fill-color: transparent;
     }
-    .wrapper span.char8 {
+    wrapper span.char8 {
     	color: #7000a8;
     }
     .wrapper span.char8:hover {
     	color: #7000a8;
     }
     .wrapper span.char8:hover::after {
-    	background: -webkit-linear-gradient(left, #610091 0%, #610091 75%);
+    	background: -webkit-linear-gradient(left, #b63d9f 0%, #b63d9f 75%);
     	-webkit-background-clip: text;
     	-webkit-text-fill-color: transparent;
     }
-    .wrapper span.char9 {
+    wrapper span.char9 {
     	color: #4600a8;
     }
     .wrapper span.char9:hover {
     	color: #4600a8;
     }
     .wrapper span.char9:hover::after {
-    	background: -webkit-linear-gradient(left, #400099 0%, #400099 75%);
+    	background: -webkit-linear-gradient(left, #b63d9f 0%, #b63d9f 75%);
     	-webkit-background-clip: text;
     	-webkit-text-fill-color: transparent;
     }
-    .wrapper span.char10 {
+    wrapper span.char10 {
     	color: #0300a8;
     }
     .wrapper span.char10:hover {
     	color: #0300a8;
     }
     .wrapper span.char10:hover::after {
-    	background: -webkit-linear-gradient(left, #030094 0%, #030094 75%);
+    	background: -webkit-linear-gradient(left, #b63d9f 0%, #b63d9f 75%);
     	-webkit-background-clip: text;
     	-webkit-text-fill-color: transparent;
     }
