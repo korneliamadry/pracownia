@@ -28,6 +28,10 @@
 
 // create illo
 
+AOS.init({
+  duration: 1500,
+})
+
 var canvas = document.querySelector("canvas");
 var c = canvas.getContext("2d");
 
@@ -201,11 +205,6 @@ function showPage(pageId) {
       // Reverse the drawing (when scrolling upwards)
       triangle.style.strokeDashoffset = length - draw;
     }
-
-
-
-
-
 
 
 

@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="js/main.js"> </script>
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+ <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'><link rel="stylesheet" href="./style.css">
 <!--
   <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
   <script src="zdog-demo.js"></script>-->
@@ -101,11 +103,12 @@ customized by us -->
 
 
 
-
+</div>
 <!-- Customized .   Dotted canvas -->
 <!-- Copyright (c) 2019 by agathaco (https://codepen.io/agathaco/pen/BwOrOz) -->
 
 </section>
+
 
     <!-- about page -->
     <section id="about" class="page">
@@ -311,36 +314,36 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
           </h2>
 </div>
 
-<div class="cards-activities">
+<div class="cards-activities" >
   <div class="row">
     <div class="column">
-      <div class="card">
+      <div class="card" data-aos="flip-down">
         <img src="img/offer1.png" alt="School" >
-        <div class="container-cards">
+        <div class="container-cards" >
           <h2>IN SCHOOL</h2>
           <p>The most important place to be educated is in school, but same goes for being entertained.</p>
-          <p><button class="button">READ MORE</button></p>
+          <p><a href="#school"><button class="button">READ MORE</button></a></p>
         </div>
       </div>
     </div>
 
     <div class="column">
-      <div class="card">
+      <div class="card" data-aos="flip-down">
         <img src="img/offer2.png" alt="Summer">
         <div class="container-cards">
           <h2>DURING SUMMER</h2>
           <p>Children love playing around during summer breaks and we are here to help them.</p>
-          <p><button class="button">READ MORE</button></p>
+          <p><a href="#summer"><button class="button">READ MORE</button></a></p>
         </div>
       </div>
     </div>
     <div class="column">
-      <div class="card">
+      <div class="card" data-aos="flip-down">
         <img src="img/offer3.png" alt="Birthday">
         <div class="container-cards">
           <h2>BIRTHDAYS</h2>
           <p>Birthdays are the best days of the year and we are here to make them even better.</p>
-          <p><button class="button">READ MORE</button></p>
+          <p><a href="#birthday"><button class="button">READ MORE</button></a></p>
         </div>
       </div>
     </div>
@@ -348,6 +351,34 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
 
 </div>
 
+<div class="act-text">
+  <div class="act-left">
+  <img src="img/act1.png" alt="" style="margin-left: 2%; margin-right: 5%">
+  <img src="img/act2.png" alt="">
+  <img src="img/act3.png" alt="">
+</div>
+  <div class="act-text1" data-aos="fade-left">
+    <h3 id="school">School activities</h3>
+    <p>We teach children aged 4-13 during their after school time at partnering schools (check locations) all around Warsaw, Poland. We are an indipendant company that uses school facilities to broaden the vision and knowledge of children with the so called “edutainment” method. By showing them how the theory transforms and is used in real-life practical situations - how is soap made; how to grow plants; how do chemicals react to each other; how to apply maths in everyday life and many, many more!</p>
+  </div>
+  <div class="act-right">
+  <img src="img/act1.png" alt="">
+  <img src="img/act2.png" alt="">
+  <img src="img/act3.png" alt="">
+</div>
+  <div class="act-text2" data-aos="fade-right">
+    <h3 id="summer">Summer breaks</h3>
+    <p>Summer breaks are something adults don’t have anymore, but children do and this is why we offer daycare during those sunny months when your child wants to play outside but you are too preoccupied with important files and deadlines at work. Let us take off some pressure from your shoulders and take your kid outside to experince nature in the best possible way - by planting trees, nurishing plants, taking care of different safe species or just play handball in the park. </p>
+  </div>
+  <div class="act-left">
+  <img src="img/act1.png" alt="">
+  <img src="img/act2.png" alt="">
+  <img src="img/act3.png" alt="">
+</div>
+  <div class="act-text3" data-aos="fade-left">
+    <h3 id="birthday">Birthday parties</h3>
+    <p>We believe a person should be always surrounded by people on his special day and birthdays are something children are esprecially excited about all-year-round, which is why we pepare numerous surprises to make the day unforgettable for said birthday child. Our goal is to make them happy and appreciated in every way possible and we stand strongly behind that! </p>
+  </div>
 
 
         </section>
@@ -367,6 +398,7 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
 
 
         <!-- main js file -->
+         <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script><script  src="./script.js"></script>
         <script src="js/main.js"></script>
 
 </body>
