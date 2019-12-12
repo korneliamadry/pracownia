@@ -1283,7 +1283,7 @@ margin-right: 20px;
     	-webkit-text-fill-color: transparent;
     }
 
-    wrapper span.char6 {
+    .wrapper span.char6 {
     	color: #a8009a;
     }
     .wrapper span.char6:hover {
@@ -1295,7 +1295,7 @@ margin-right: 20px;
     	-webkit-text-fill-color: transparent;
     }
 
-    wrapper span.char7 {
+    .wrapper span.char7 {
     	color: #9a00a8;
     }
     .wrapper span.char7:hover {
@@ -1306,7 +1306,7 @@ margin-right: 20px;
     	-webkit-background-clip: text;
     	-webkit-text-fill-color: transparent;
     }
-    wrapper span.char8 {
+    .wrapper span.char8 {
     	color: #7000a8;
     }
     .wrapper span.char8:hover {
@@ -1317,7 +1317,7 @@ margin-right: 20px;
     	-webkit-background-clip: text;
     	-webkit-text-fill-color: transparent;
     }
-    wrapper span.char9 {
+    .wrapper span.char9 {
     	color: #4600a8;
     }
     .wrapper span.char9:hover {
@@ -1328,7 +1328,7 @@ margin-right: 20px;
     	-webkit-background-clip: text;
     	-webkit-text-fill-color: transparent;
     }
-    wrapper span.char10 {
+    .wrapper span.char10 {
     	color: #0300a8;
     }
     .wrapper span.char10:hover {
