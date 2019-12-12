@@ -99,7 +99,7 @@ flex-wrap: wrap;
 .main {
   display: flex;
   flex-wrap: wrap;
-  width: 94%;
+
 }
 
 .imglogo {
@@ -127,6 +127,95 @@ flex-wrap: wrap;
 
 
 
+
+/* navigation */
+nav {
+min-width: 50%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 10%;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #f15a29;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+  color: #f15a29;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+
+li a {
+  padding: 25px;
+}
+
+
+.active {
+  color: #f15a29;
+}
+
 a {
   font-family: 'Comfortaa', cursive;
   font-weight: bold;
@@ -134,28 +223,9 @@ a {
   color: #000000;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-right: 10%;
-}
 
-li {
-  display: inline;
-}
 
-li a {
-  padding: 25px;
-}
 
-li a:hover {
-border-bottom: solid 2px #f15a29;
-}
-
-.active {
-  color: #f15a29;
-}
 
 .login {
   position: absolute;
@@ -165,10 +235,16 @@ border-bottom: solid 2px #f15a29;
     font-size: 2.2vh;
 }
 
+.login:hover{
+  border-bottom: solid 1px #f15a29;
+}
+
+
+
 
 
 .welcometext {
-max-width: 65%;
+max-width: 60%;
 max-height: 60%;
 color: rgba(0, 0, 0, 0.7);
 margin-left: 10%;
@@ -180,7 +256,7 @@ margin-left: 10%;
   width: 100%;
   position: absolute;
   right: 0;
-  bottom: 10;
+  bottom: 150px;
 }
 
 
@@ -200,8 +276,8 @@ margin-left: 10%;
   width: 70%;
 margin-bottom: 200px;
 z-index: 10;
-    -webkit-animation: flip-in-x 1s 2s;
-            animation: flip-in-x 1s 2s;
+    -webkit-animation: flip-in-x 1s 0.2s;
+            animation: flip-in-x 1s 0.2s;
 display: flex;
 flex-wrap: nowrap;
 }
@@ -742,10 +818,10 @@ opacity: 0.5;
 
 .imgoffer {
 
-width: 110px;
+width: 105px;
  transition: all .2s ease-in-out;
- margin-left: 22px;
- box-shadow: 2px 2px 3px grey;
+margin-right: 20px;
+/* box-shadow: 2px 2px 3px #bdbdbd;
  border-radius: 10px;
 /* border: solid 1px orange; - if we want border around*/
 }
@@ -856,6 +932,8 @@ width: 110px;
     }
 
 
+
+
 .footer img {
   width: 18px;
   opacity: 0.6;
@@ -863,7 +941,7 @@ width: 110px;
 
     .tetrominos {
       position: absolute;
-      bottom: 0;
+      bottom: 1%;
       right: 18%;
       z-index: 30;
       -webkit-transform: translate(-112px, -96px);
@@ -1471,6 +1549,65 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+
+
+.try {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.try * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.try li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 2em;
+  padding: 0;
+}
+.try a {
+  display: inline-block;
+  padding: 0.5em 17px;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.try a:before {
+  left: 20%;
+  right: 20%;
+  top: 50%;
+  content: '';
+  border-left: 12px solid #9b59b6;
+  border-right: 12px solid #9b59b6;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 3px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.try a:hover,
+.try .current a {
+  color: #ffffff;
+}
+.try a:hover:before,
+.try .current a:before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+
+
+
+
 
 .offer {
   margin-bottom: 20px;
