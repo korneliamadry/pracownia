@@ -28,6 +28,8 @@
 
 // create illo
 
+"use strict";
+
 AOS.init({
   duration: 1500,
 })
@@ -184,30 +186,75 @@ function showPage(pageId) {
     }
 
     setDefaultPage();
+    //
+    // var triangle = document.getElementById("triangle");
+    // var length = triangle.getTotalLength();
+    //
+    // // The start position of the drawing
+    // triangle.style.strokeDasharray = length;
+    //
+    // // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+    // triangle.style.strokeDashoffset = length;
+    //
+    // // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+    // window.addEventListener("scroll", myFunction);
+    //
+    // function myFunction() {
+    // var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    //
+    //   var draw = length * scrollpercent;
+    //
+    //   // Reverse the drawing (when scrolling upwards)
+    //   triangle.style.strokeDashoffset = length - draw;
+    // }
+    //
+    //
+    //
+    //
 
-    var triangle = document.getElementById("triangle");
-    var length = triangle.getTotalLength();
 
-    // The start position of the drawing
-    triangle.style.strokeDasharray = length;
 
-    // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
-    triangle.style.strokeDashoffset = length;
+// mobile navigation //
 
-    // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
-    window.addEventListener("scroll", myFunction);
 
-    function myFunction() {
-    var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
-      var draw = length * scrollpercent;
+// hide all pages
+function hideAllPages() {
+  let pages = document.querySelectorAll(".page");
+  for (let page of pages) {
+    page.style.display = "none";
+  }
+}
 
-      // Reverse the drawing (when scrolling upwards)
-      triangle.style.strokeDashoffset = length - draw;
+// show page or tab
+function showPage(pageId) {
+  hideAllPages();
+  document.querySelector(`#${pageId}`).style.display = "block";
+  location.href = `#${pageId}`;
+  setActiveTab(pageId);
+}
+
+// sets active tabbar/ menu item
+function setActiveTab(pageId) {
+  let pages = document.querySelectorAll(".tabbar a");
+  for (let page of pages) {
+    if (`#${pageId}` === page.getAttribute("href")) {
+      page.classList.add("active");
+    } else {
+      page.classList.remove("active");
     }
 
+  }
+}
 
-
+// set default page
+function setDefaultPage() {
+  let page = "home";
+  if (location.hash) {
+    page = location.hash.slice(1);
+  }
+  showPage(page);
+}
 
 
 
