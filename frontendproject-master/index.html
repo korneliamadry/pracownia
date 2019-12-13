@@ -29,7 +29,10 @@
   <div class="header">
   <div class="logo">
   <a href="#home"> <img src="img/logo.png" class="imglogo"> </a>
+    <a href="#home"> <img src="img/logo.png" class="imglogomobile"> </a>
   </div>
+
+
   <!-- menu -->
 
 
@@ -41,17 +44,17 @@
     <a href="#activities" onclick="showPage('activities')">Activities</a>
   </nav>
 
+
+
+
   </div>
-
-
-
 
 
 
 
   <a href="calendar/index.html" class="login">
     <img src="img/calendar.png" class="calendar"> Login </a>
-  <!-- - a href will be changed in SPA -->
+
 
 
 <div class="menudesktop">
@@ -86,21 +89,24 @@ Read more about <a href="#about" onclick="showPage('about')"> <span class="under
 
 <div class="offer">
 
-  <img src="img/offer-school.png" class="imgoffer">
-  <img src="img/offer-summer.png" class="imgoffer">
-  <img src="img/offer-birthday.png" class="imgoffer">
+  <a href="#school"><img src="img/group4.png" class="imgoffer"></a>
+  <a href="#birthday"><img src="img/group6.png" class="imgoffer"></a>
+  <a href="#summer"><img src="img/group5.png" class="imgoffer"></a>
 
-
-
+<br><br>
 
 </div>
+
+
+
+<button class="button"> <p> Sign up </p></button> <button class="button"> <p> Work with us </p> </button>
 
 
 </div>
 
 
 <div class="drawing">
-<img src="img/kids.svg" class="imgkids">
+<img src="img/image_home.svg" class="imgkids">
 
 
 </div>
@@ -143,8 +149,8 @@ customized by us -->
       <div class="mainpage" class="topbar">
         <div class="header">
         <div class="logo">
-      <a href="#about" onclick="showPage('about')">
-        <img src="img/logo.png" class="imglogo2">
+      <a href="#home" onclick="showPage('home')">
+        <img src="img/logo2.png" class="imglogo2">
     </a>  </div>
 
 
@@ -155,6 +161,10 @@ customized by us -->
       <a href="#about" onclick="showPage('about')">About</a>
       <a href="#activities" onclick="showPage('activities')">Activities</a>
     </nav>
+
+    <a href="calendar/index.html" class="login">
+      <img src="img/calendar.png" class="calendar"> Login </a>
+
 
     </div>
 
@@ -190,7 +200,7 @@ customized by us -->
 
         <a href="calendar/index.html" class="login">
           <img src="img/calendar.png" class="calendar"> Login </a>
-        <!-- a href will be changed in SPA -->
+
 
 </div>
 
@@ -310,21 +320,19 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
 
 
 
-<!-- mapbox try -->
-
-<div id='map'></div>
+<div id="map"></div>
 
 
 
 
 
 
-
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.063227427533!2d21.01912721576347!3d52.205898479755945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccd892b315b1%3A0x7a2c99240214852c!2sPracownia%20Eksperymentu!5e0!3m2!1sen!2sdk!4v1575899133319!5m2!1sen!2sdk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1m4b5TX7Z9tHBc7o15ZVBtJnd-co5zSsT&hl=en" class="map"></iframe>
 
 
     </section>
+
+
 
       <!-- activities page -->
 
@@ -337,21 +345,7 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
       </a>  </div>
 
 
-      <div class="navigationmobile">
-      <!-- tabbar navigation -->
-      <nav id="tabbar" class="tabbar hide">
-        <a href="#home" onclick="showPage('home')">Home</a>
-        <a href="#about" onclick="showPage('about')">About</a>
-        <a href="#activities" onclick="showPage('activities')">Activities</a>
-      </nav>
 
-      <a href="calendar/index.html" class="login">
-        <img src="img/calendar.png" class="calendar"> Login </a>
-      <!-- a href will be changed in SPA -->
-
-
-
-      </div>
 
 
           <div class="wrapper">
@@ -370,6 +364,29 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
         </div>
 
           <!-- menu -->
+
+
+
+          <div class="navigationmobile">
+          <!-- tabbar navigation -->
+          <nav id="tabbar" class="tabbar hide">
+            <a href="#home" onclick="showPage('home')">Home</a>
+            <a href="#about" onclick="showPage('about')">About</a>
+            <a href="#activities" onclick="showPage('activities')">Activities</a>
+          </nav>
+
+
+
+          </div>
+
+
+          <a href="calendar/index.html" class="login">
+            <img src="img/calendar.png" class="calendar"> Login </a>
+
+
+
+
+
 
 <div class="menudesktop">
             <div class="menu"></div>
@@ -400,7 +417,7 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
   <div class="row">
     <div class="column">
       <div class="card" data-aos="flip-down">
-        <img src="img/offer1.png" alt="School" >
+        <img src="img/icon_offer1.png" alt="School" >
         <div class="container-cards" >
           <h2>IN SCHOOL</h2>
           <p>The most important place to be educated is in school, but same goes for being entertained.</p>
@@ -411,7 +428,7 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
 
     <div class="column">
       <div class="card" data-aos="flip-down">
-        <img src="img/offer2.png" alt="Summer">
+        <img src="img/icon_offer2.png" alt="Summer">
         <div class="container-cards">
           <h2>DURING SUMMER</h2>
           <p>Children love playing around during summer breaks and we are here to help them.</p>
@@ -421,7 +438,7 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
     </div>
     <div class="column">
       <div class="card" data-aos="flip-down">
-        <img src="img/offer3.png" alt="Birthday">
+        <img src="img/icon_offer3.png" alt="Birthday">
         <div class="container-cards">
           <h2>BIRTHDAYS</h2>
           <p>Birthdays are the best days of the year and we are here to make them even better.</p>
@@ -433,34 +450,39 @@ Our lecturers skillfully inspire to ask questions, search for answers, hypothese
 
 </div>
 
+
+
+
 <div class="act-text">
   <div class="act-left">
-  <img src="img/act1.png" alt="" style="margin-left: 2%; margin-right: 5%">
-  <img src="img/act2.png" alt="">
-  <img src="img/act3.png" alt="">
+    <img src="img/act3.png" alt="Chemestry">
+    <img src="img/act4.png" alt="Languages">
+    <img src="img/act10.png" alt="Biology">
 </div>
   <div class="act-text1" data-aos="fade-left">
     <h3 id="school">School activities</h3>
     <p>We teach children aged 4-13 during their after school time at partnering schools (check locations) all around Warsaw, Poland. We are an indipendant company that uses school facilities to broaden the vision and knowledge of children with the so called “edutainment” method. By showing them how the theory transforms and is used in real-life practical situations - how is soap made; how to grow plants; how do chemicals react to each other; how to apply maths in everyday life and many, many more!</p>
   </div>
   <div class="act-right">
-  <img src="img/act1.png" alt="">
-  <img src="img/act2.png" alt="">
-  <img src="img/act3.png" alt="">
+  <img src="img/act1.png" alt="Park">
+  <img src="img/act6.png" alt="Games">
+  <img src="img/act9.png" alt="Plants">
 </div>
   <div class="act-text2" data-aos="fade-right">
     <h3 id="summer">Summer breaks</h3>
     <p>Summer breaks are something adults don’t have anymore, but children do and this is why we offer daycare during those sunny months when your child wants to play outside but you are too preoccupied with important files and deadlines at work. Let us take off some pressure from your shoulders and take your kid outside to experince nature in the best possible way - by planting trees, nurishing plants, taking care of different safe species or just play handball in the park. </p>
   </div>
   <div class="act-left">
-  <img src="img/act1.png" alt="">
-  <img src="img/act2.png" alt="">
-  <img src="img/act3.png" alt="">
+  <img src="img/act2.png" alt="Love">
+  <img src="img/act7.png" alt="Presents">
+  <img src="img/act8.png" alt="Playing">
 </div>
   <div class="act-text3" data-aos="fade-left">
     <h3 id="birthday">Birthday parties</h3>
     <p>We believe a person should be always surrounded by people on his special day and birthdays are something children are esprecially excited about all-year-round, which is why we pepare numerous surprises to make the day unforgettable for said birthday child. Our goal is to make them happy and appreciated in every way possible and we stand strongly behind that! </p>
   </div>
+
+</div>
 
 
         </section>
