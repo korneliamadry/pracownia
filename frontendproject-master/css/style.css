@@ -274,7 +274,7 @@ margin-left: 10%;
   width: 100%;
   position: absolute;
   right: 10px;
-  bottom: 190px;
+  bottom: 250px;
 }
 
 
@@ -956,8 +956,13 @@ margin-right: 20px;
   text-align: center;
   background-color: #4800ba;
   height: 90px;
-
     }
+
+#footer a {
+  font-color: white;
+}
+
+
 
 
 /* .mapdiv {
